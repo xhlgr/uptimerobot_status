@@ -15,7 +15,7 @@ $.ajax({//获取uptimerobot监控的网站状态
         if(data.stat=='ok'){//请求返回成功
         	for(var i=0;i < data.monitors.length;i++){
             var avgtime=Number(data.monitors[i].average_response_time).toFixed(2)//平均响应时间
-            document.getElementById("uptimerobot").innerHTML+=data.monitors[i].friendly_name+'首页平均响应时间：'+avgtime+'ms<br>';
+            document.getElementById("avgtime").innerHTML+=data.monitors[i].friendly_name+'首页平均响应时间：'+avgtime+'ms<br>';
           }
         }
     },
