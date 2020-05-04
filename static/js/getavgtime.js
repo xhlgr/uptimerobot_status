@@ -19,7 +19,7 @@ $.ajax({//获取uptimerobot监控的网站状态
                 stravg+='<p>'+data.monitors[i].friendly_name+'首页平均响应时间：'+avgtime+'ms</p>';
             }
             stravg+='</div>'
-            document.getElementById("uptime").innerHTML+= stravg;
+            document.getElementById("avgtime").innerHTML+= stravg;
         }
     },
     error:function(textStatus){console.log("uptimerobot请求失败！");}
