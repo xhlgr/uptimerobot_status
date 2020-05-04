@@ -1,4 +1,3 @@
-<script>
 var data = {
     api_key:'ur912507-8258182cfa5e7c2c21902bb9',
     format:'json',
@@ -22,4 +21,3 @@ $.ajax({//获取uptimerobot监控的网站状态
     },
     error:function(textStatus){console.log("uptimerobot请求失败！");}
 });
-</script>
